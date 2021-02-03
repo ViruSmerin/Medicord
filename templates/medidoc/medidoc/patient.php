@@ -1,0 +1,239 @@
+<?php include('header.php'); ?>
+  
+    <div class="app-main__inner">
+        <div class="app-page-title pt-18">
+            <div class="page-title-wrapper">
+                <div class="page-title-heading">
+                    <div class="card-body p-0">
+                        <div class="mr-2 btn-group">
+                            <h5 class="page-title">Patients &emsp;| &emsp;</h5>
+                            <p style="font-size: 14px;">Sort by: </p>
+                        </div>
+
+                        <div class="mr-2 btn-group" style="margin-top: -20px;">
+                            <select name="select" id="exampleSelect" class="form-control custom-sort">
+                                <option>Last Appointment</option>
+                                <option>Patient Name</option>
+                                <option>Upcoming Appointment</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-title-actions">
+                    <div class="d-inline-block">
+                        <a class="mb-2 mr-2 btn btn-light">
+                                <span class="btn-icon-wrapper opacity-7">
+                                <i class="fas fa-print"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="d-inline-block">
+                        <a class="mb-2 mr-2 btn btn-light">
+                                <span class="btn-icon-wrapper pr-2 opacity-7">
+                                <i class="fas fa-filter"></i>
+                            </span>
+                            Fitler
+                        </a>
+                    </div>
+
+                    <div class="d-inline-block">
+                        <a class="mb-2 mr-2 btn btn-light">
+                                <span class="btn-icon-wrapper pr-2 opacity-7">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                            Edit Column
+                        </a>
+                    </div>
+                    <div class="d-inline-block">
+                        <a href="./new_patient.php" class="mb-2 mr-2 btn btn-primary color-white">
+                                <span class="btn-icon-wrapper pr-2 opacity-7">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            Add New Patient
+                        </a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                
+
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th class="bt-0" scope="col" width="5%"></th>
+                        <th class="bt-0" scope="col" width="15%">Patient No.</th>
+                        <th class="bt-0" scope="col" width="25%">Basic Info</th>
+                        <th class="bt-0" scope="col" width="15%">Phone Number</th>
+                        <th class="bt-0" scope="col" width="15%">City</th>
+                        <th class="bt-0" scope="col" width="15%">Created Date</th>
+                        <th class="bt-0" scope="col" width="10%"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                  <label class="custom-control-label" for="customCheck1"></label>
+                              </div>
+                            </td>
+                            <td>DH-109-213</td>
+                            <td>
+                                <div class="row pt-10 pb-10">
+                                    <div class="col-md-2">
+                                        <img width="42" class="rounded-circle" src="./assets/images/avatars/1.png" alt="">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <a href="./gdm_new.php">
+                                            <p class="mb-0 bold">Ronesh Shrestha</p>
+                                            <p class="mb-0 text-mute">ideau98@gmail.com</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(977) 9818344862</td>
+                            <td>New Baneswhor</td>
+                            <td>24 Feb 2020</td>
+                            <td>
+                                <div class="dropdown dropleft d-inline-block">
+                                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 btn"><i class="fas fa-ellipsis-h"></i></button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-edit mr-2 text-mute"></i>
+                                            Edit Patient
+                                        </button>
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-trash mr-2 text-mute"></i>
+                                            Delete Patient
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                  <label class="custom-control-label" for="customCheck2"></label>
+                              </div>
+                            </td>
+                            <td>DH-109-214</td>
+                            <td>
+                                <div class="row pt-10 pb-10">
+                                    <div class="col-md-2">
+                                        <img width="42" class="rounded-circle" src="./assets/images/avatars/2.png" alt="">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0 bold">Ronesh Shrestha</p>
+                                        <p class="mb-0 text-mute">ideau98@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(977) 9818344862</td>
+                            <td>New Baneswhor</td>
+                            <td>24 Feb 2020</td>
+                            <td>
+                                <div class="dropdown dropleft d-inline-block">
+                                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 btn"><i class="fas fa-ellipsis-h"></i></button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-edit mr-2 text-mute"></i>
+                                            Edit Patient
+                                        </button>
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-trash mr-2 text-mute"></i>
+                                            Delete Patient
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                  <label class="custom-control-label" for="customCheck3"></label>
+                              </div>
+                            </td>
+                            <td>DH-109-215</td>
+                            <td>
+                                <div class="row pt-10 pb-10">
+                                    <div class="col-md-2">
+                                        <img width="42" class="rounded-circle" src="./assets/images/avatars/3.png" alt="">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0 bold">Ronesh Shrestha</p>
+                                        <p class="mb-0 text-mute">ideau98@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(977) 9818344862</td>
+                            <td>New Baneswhor</td>
+                            <td>24 Feb 2020</td>
+                            <td>
+                                <div class="dropdown dropleft d-inline-block">
+                                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 btn"><i class="fas fa-ellipsis-h"></i></button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-edit mr-2 text-mute"></i>
+                                            Edit Patient
+                                        </button>
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-trash mr-2 text-mute"></i>
+                                            Delete Patient
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                  <label class="custom-control-label" for="customCheck4"></label>
+                              </div>
+                            </td>
+                            <td>DH-109-216</td>
+                            <td>
+                                <div class="row pt-10 pb-10">
+                                    <div class="col-md-2">
+                                        <img width="42" class="rounded-circle" src="./assets/images/avatars/4.png" alt="">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-0 bold">Ronesh Shrestha</p>
+                                        <p class="mb-0 text-mute">ideau98@gmail.com</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>(977) 9818344862</td>
+                            <td>New Baneswhor</td>
+                            <td>24 Feb 2020</td>
+                            <td>
+                                <div class="dropdown dropleft d-inline-block">
+                                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 btn"><i class="fas fa-ellipsis-h"></i></button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-edit mr-2 text-mute"></i>
+                                            Edit Patient
+                                        </button>
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <i class="fas fa-trash mr-2 text-mute"></i>
+                                            Delete Patient
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+<?php include('footer.php'); ?>
+        
