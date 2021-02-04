@@ -10430,7 +10430,7 @@ button,
 }
 
 .app-header.header-text-light .app-header__logo .logo-src {
-	background: url(assets/images/logo.png)
+	background: url("{% static 'images/logo.png' %}")
 }
 
 .app-header.header-text-light .app-header__mobile-menu .hamburger-inner,
@@ -10528,7 +10528,7 @@ button,
 }
 
 .app-header.header-text-dark .app-header__logo .logo-src {
-	background: url(assets/images/logo-inverse.png)
+	background: url(../images/logo-inverse.png)
 }
 
 .app-sidebar {
@@ -10806,7 +10806,7 @@ button,
 }
 
 .app-sidebar.sidebar-text-light .app-header__logo .logo-src {
-	background: url(assets/images/logo.png)
+	background: url(../images/logo.png)
 }
 
 .app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner,
@@ -15924,8 +15924,8 @@ legend {
 	font-family: 'Font Awesome 5 Free';
 	font-style: normal;
 	font-weight: 900;
-	src: url(assets/fonts/fa-solid-900.eot);
-	src: url(assets/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(assets/fonts/fa-solid-900.woff2) format("woff2"), url(assets/fonts/fa-solid-900.woff) format("woff"), url(assets/fonts/fa-solid-900.ttf) format("truetype"), url(assets/fonts/fa-solid-900.svg#fontawesome) format("svg")
+	src: url(../fonts/fa-solid-900.eot);
+	src: url(../fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.woff) format("woff"), url(../fonts/fa-solid-900.ttf) format("truetype"), url(../fonts/fa-solid-900.svg#fontawesome) format("svg")
 }
 
 .fa,
@@ -21486,8 +21486,8 @@ legend {
 
 @font-face {
 	font-family: 'Pe-icon-7-stroke';
-	src: url(assets/fonts/Pe-icon-7-stroke.eot);
-	src: url(assets/fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v) format("embedded-opentype"), url(assets/fonts/Pe-icon-7-stroke.woff) format("woff"), url(assets/fonts/Pe-icon-7-stroke.ttf) format("truetype"), url(assets/fonts/Pe-icon-7-stroke.svg#Pe-icon-7-stroke) format("svg");
+	src: url(../fonts/Pe-icon-7-stroke.eot);
+	src: url(../fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v) format("embedded-opentype"), url(../fonts/Pe-icon-7-stroke.woff) format("woff"), url(../fonts/Pe-icon-7-stroke.ttf) format("truetype"), url(../fonts/Pe-icon-7-stroke.svg#Pe-icon-7-stroke) format("svg");
 	font-weight: normal;
 	font-style: normal
 }
@@ -25036,7 +25036,7 @@ ul.timeline > li:before {
 }
 
 .background-login{
-	background: url(./assets/img/back1.png); 
+	background: url(./../img/back1.png); 
   	background-repeat: no-repeat;
   	background-size: auto 100%;
 }
