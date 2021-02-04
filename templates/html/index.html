@@ -1,5 +1,6 @@
-<?php include('header.php'); ?>
-
+{% extends 'header.html' %} 
+{% load static %}
+{% block head %}
     <div class="app-main__inner">
         <h5 class="dashboard-title">Dashboard</h5> 
         <div class="row">
@@ -408,5 +409,4 @@
           }]
         });
     </script>
-
-<?php include('footer.php'); ?>
+{% endblock %}

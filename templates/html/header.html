@@ -1,4 +1,6 @@
-<!doctype html>
+
+{% load static %}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -118,7 +120,7 @@
         </div>   
 
         <div class="app-main">
-            <div class="app-sidebar sidebar-shadow">
+            <di{% block head%} {% endblock %}v class="app-sidebar sidebar-shadow">
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <div>
@@ -191,4 +193,5 @@
                 </div>
             </div>     
             <div class="app-main__outer mt--60">
-        
+    </body>
+</html>      
