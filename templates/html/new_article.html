@@ -1,4 +1,5 @@
-<?php include('header.php'); ?>
+{% extends 'base.html' %}
+{% block body %}
     <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css'>
     <style type="text/css">
@@ -232,7 +233,4 @@
     <script>
         CKEDITOR.replace( 'editor' );
     </script>
-
-
-
-<?php include('footer.php'); ?>
+{% endblock %}

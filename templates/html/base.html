@@ -203,8 +203,22 @@
                 </div>
             </div>
         </div>
-        <div class="app-main__outer mt--60">
-            {% block head%} {% endblock %}
+    <div class="app-main__outer mt--60">
+        {% block body %} {% endblock %}
+        <div class="app-footer">
+                <div class="app-footer__inner">
+                    <div class="app-footer-right">
+                        <ul class="nav">
+                            <li class="nav-item font-small">
+                                &#169; Copyright 2020 Medicord | Product of Ayata Inc for Dhulikhel Hospital. All rights reserved.  
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+<script type="text/javascript" src="{% static 'scripts/main.js' %}"></script> 
 </body>
-
 </html>

@@ -1,5 +1,5 @@
-<?php include('header.php'); ?>
-
+{% extends 'base.html' %}
+{% block body %}
     <div class="app-main__inner">
        
         <div class="app-page-title pt-0 pb-0">
@@ -1280,5 +1280,4 @@
             $('#intakeTable').DataTable();
         } );
     </script>
-<?php include('footer.php'); ?>
-        
+{%  endblock %}

@@ -1,4 +1,5 @@
-<?php include('header.php'); ?>
+{% extends 'base.html' %}
+{% block body%}
 <style type="text/css">
     #folder-tabs {
       overflow: hidden;
@@ -892,6 +893,4 @@
             });
         });
     </script>
-
-<?php include('footer.php'); ?>
-        
+{% endblock %}        

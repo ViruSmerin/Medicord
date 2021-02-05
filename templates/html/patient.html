@@ -1,5 +1,5 @@
-<?php include('header.php'); ?>
-  
+{% extend 'base.html' %}
+{% block body %}
     <div class="app-main__inner">
         <div class="app-page-title pt-18">
             <div class="page-title-wrapper">
@@ -234,6 +234,4 @@
             </div>
         </div>
     </div>
-
-<?php include('footer.php'); ?>
-        
+{% endblock %}
